@@ -1,0 +1,141 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.homePage {
+  background-image: url('../assets/bg2.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.icon-container, .resume-container, .vscode-container, .projects-container-main, .calculator-container, .dino-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, backdrop-filter 0.2s ease;
+  width: 85px;
+}
+
+.icon-container:hover,
+.resume-container:hover,
+.vscode-container:hover,
+.projects-container-main:hover,
+.calculator-container:hover,
+.dino-container:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.icon-label, .resume-label, .vscode-label, .projects-label, .calculator-label, .dino-label {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.recycle-bin-img, .resume-icon, .vscode-icon, .projects-icon, .calculator-icon, .dino-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.pdf-container {
+  position: absolute;
+  border: 1px solid black;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  cursor: move;
+  position: relative;
+}
+
+.pdf-button1 {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.pdf-button2 {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  margin-left: 100px;
+}
+
+.pdf-button2:hover {
+  color: red;
+}
+.resume-maximize{
+  margin-right: 20px;
+}
+.resume-close {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+.projects-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-align: center; 
+  flex: 1; 
+}
+
+.close-projects {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: black;
+}
+
+.projects-container {
+  width: 80%; 
+  max-width: 800px; 
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects-container h3 {
+  margin: 0;
+}
+
+.projects-container p {
+  margin: 5px 0;
+}
+

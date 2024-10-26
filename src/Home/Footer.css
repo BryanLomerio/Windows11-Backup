@@ -1,0 +1,279 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(56, 55, 54, 0.6);
+  color: #fff;
+  display: flex;
+  justify-content: center; 
+  padding: 5px 0;
+  backdrop-filter: blur(2px); 
+  z-index: 1000;
+
+}
+
+.taskbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  position: relative; 
+}
+
+.windows-icon, .chrome-icon, .fileExplorer-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.system-icons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px; 
+}
+
+.system-icon {
+  margin: 0 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.time-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+
+.time-date div {
+  font-size: 12px;
+}
+
+.windows-icon:hover, .chrome-icon:hover, .fileExplorer-icon:hover {
+  background-color: rgba(99, 98, 98, 0.276); 
+  backdrop-filter: blur(8px); 
+  border-radius: 5px;
+}
+
+.start-menu {
+  position: absolute;
+  bottom: 100%;
+  width: 600px; 
+  height: 500px;
+  background-color: #302f2f;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);  
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.search-container {   
+  margin-top: 20px;
+  align-self: center;
+  position: relative;
+  right: 10px;
+  width: 550px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #535353;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #1a1919;
+  caret-color: white;
+
+}
+.pin-title{
+  color: white;
+align-items: start;
+position: relative;
+margin-top: 20px;
+font-weight: bold;
+font-size: 13px;
+margin-left: 50px;
+}
+.pinned-apps {
+  margin-top: 10px;
+}
+
+.apps-list {
+  display: flex;
+  gap: 30px;
+  justify-content: start;
+  margin-top: 20px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.app-icon-chrome {
+  width: 30px; 
+  height: 30px;
+  display: block;
+  margin-left: 10px;
+}
+.app-icon-vscode {
+  width: 30px; 
+  height: 30px;
+  display: block;
+  margin-left: 7px;
+}
+.app-icon-recyclebin {
+  width: 30px; 
+  height: 30px;
+  display: block;
+  margin-left: 17px;
+}
+.app-icon-fileexplorer {
+  width: 30px; 
+  height: 30px;
+  display: block;
+  margin-left: 23px;
+}
+
+.chrome-label, .recyclebin, .fileexplorer, .vscode {
+  font-size: 14px;
+  margin-top: 5px; 
+  text-align: center;
+}
+
+.chrome-label{
+  color: white; 
+}
+
+.recyclebin {
+  color: white; 
+}
+
+.fileexplorer{
+  color: white; 
+}
+
+.vscode{
+  color: white; 
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all-apps {
+font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-right: 50px;
+  position: relative;
+  bottom: 90px;
+  color: white;
+  background-color: #1a1919;
+  padding: 5px;
+  border-radius: 4px 4px 4px 4px;
+  cursor: pointer;
+  font-weight: normal;
+}
+.section-recommended{
+  display: flex;
+  margin-left: 50px;
+  margin-top: 100px;
+  font-weight: bold;
+  color: white;
+  font-size: 13px;
+
+}
+.recommended-arrow{
+  position: relative;
+  left: 330px;
+  bottom: 0px;
+  background-color: #1a1919;
+  padding: 5px;
+  border-radius: 4px 4px 4px 4px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.profilePic-menu{
+  position: absolute;
+  width: 35px;
+  border-radius: 30px 30px 30px 30px;
+  left: 30px;
+}
+.menu-name{
+  position: absolute;
+  left: 80px;
+  bottom: 25px;
+}
+.menu-footer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  background-color: green;
+  position: relative;
+}
+
+.menu-footer-pic {
+  display: flex;
+  align-items: center;
+}
+
+.profilePic-menu {
+  width: 35px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.menu-name {
+  margin-left: 30px;
+  color: white;
+  bottom: 15px;
+}
+
+.power-off {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  position: relative;
+  
+}
+
+.power-off-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.power-options {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  background-color: #1a1919;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.power-option {
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.power-option:hover {
+  background-color: rgba(99, 98, 98, 0.5);
+  border-radius: 5px;
+}
+.power-icon{
+  margin-top: 20px;
+  margin-right: 80px;
+  cursor: pointer;
+}

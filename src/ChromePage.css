@@ -1,0 +1,132 @@
+.chrome-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+.chrome-header {
+  height: 30px;
+  background-color: #b3b3b3;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+}
+.chrome-tabs {
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0; 
+  padding: 7px 20px;
+  position: relative;
+  border-radius: 15px 15px 0px 0px;
+  font-size: 15px;
+  margin-top: 8px;
+
+  
+}
+
+.chrome-tabs .tab.selected {
+  background-color: #c0c0c0;
+  font-weight: bold;
+  border-bottom: 1px solid transparent; 
+}
+
+.chrome-controls {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.control-icon {
+  color: #fff;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.minimize {
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  color: red;
+}
+
+.chrome-content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar .google-logo {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.google-input {
+  border: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  width: 500px;
+  border-radius: 30px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.google-input:focus {
+  border-color: black;
+}
+
+input::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-item img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-item:hover {
+  opacity: 0.6;
+}
+
+.social-label {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+}
